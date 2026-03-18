@@ -19,6 +19,7 @@ public class TestaTodoParte {
         p1.adicionaItemPedido(201, 2, pr2);
         p1.adicionaItemPedido(503, 7, pr3);
         System.out.println(p1.toString());
+        System.out.println(p1.calculaTotalPedido());
     }
 }
 // No digrama:

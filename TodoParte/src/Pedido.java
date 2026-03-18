@@ -68,6 +68,10 @@ public class Pedido {
                 '}';
     }
     public float calculaTotalPedido() {
-        return 0;
+        float soma = 0;
+        for (ItemPedido ip : this.itensPedido) {
+            soma += ip.getQuantidade() * ip.getProduto().getPreco();
+        }
+        return soma;
     }
 }
