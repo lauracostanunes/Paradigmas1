@@ -10,7 +10,7 @@ public class ArCondicionado {
         this.setMarca(marca);
         this.setModelo(modelo);
         this.setTemperatura(temperatura);
-        this.ligado = false;
+        this.ligado = ligado;
     }
 
     // Setter temperatura (16 a 30)
