@@ -13,7 +13,9 @@ public class TestaAgencia {
         System.out.println(r1.toString());
 
         // Usando o objeto r1, exiba o nome do passageiro da reserva
+        System.out.println(r1.getPassageiro().getNome());
 
         // Usando o objeto r1, exiba o destino do voo da reserva
+        System.out.println(r1.getVoo().getDestino());
     }
 }
