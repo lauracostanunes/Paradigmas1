@@ -24,6 +24,14 @@ public class Apartamento {
         return andar;
     }
 
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setAndar(int andar) {
+        this.andar = andar;
+    }
+
     @Override
     public String toString() {
         return "\nApartamento{" +

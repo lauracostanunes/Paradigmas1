@@ -17,6 +17,30 @@ public class Edificio {
         this.listaApartamentos = new ArrayList<>();
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public ArrayList<Apartamento> getListaApartamentos() {
+        return listaApartamentos;
+    }
+
+    public void setListaApartamentos(ArrayList<Apartamento> listaApartamentos) {
+        this.listaApartamentos = listaApartamentos;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
     public void construirApartamento(int numero, int andar){
         this.listaApartamentos.add(new Apartamento(numero, andar));
     }
