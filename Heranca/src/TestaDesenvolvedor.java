@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class TestaDesenvolvedor {
     // Polimorfismo
     public static void exibir (Desenvolvedor camaleao) {
@@ -14,5 +17,11 @@ public class TestaDesenvolvedor {
 
         Senior s1 = new Senior("Ciclano", "Java", 8000, 2000);
         exibir(s1);
+
+
+        ArrayList<Desenvolvedor> empresa = new ArrayList<>();
+        empresa.add(jr1);
+        empresa.add(p1);
+        empresa.add(s1);
     }
 }
