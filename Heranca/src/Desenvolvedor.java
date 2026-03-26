@@ -1,3 +1,4 @@
+// Herança é reutilização de código
 public class Desenvolvedor {
     protected String nome, linguagem;
     protected float salarioBase;
@@ -42,5 +43,13 @@ public class Desenvolvedor {
                 ", linguagem='" + linguagem + '\'' +
                 ", salarioBase=" + salarioBase +
                 '}';
+    }
+
+    public void codar() {
+        System.out.println("Desenvolvedor planerja e escreve código-fonte");
+    }
+
+    public float calcularBonus() {
+        return  this.salarioBase * 0.05f;
     }
 }
