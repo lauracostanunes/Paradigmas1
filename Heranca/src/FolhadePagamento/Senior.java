@@ -1,10 +1,11 @@
 package FolhadePagamento;
 
-public class Senior extends Desenvolvedor {
+public class Senior extends Desenvolvedor{
     private float verbaLider;
 
-    public Senior(){
-        super();
+    public Senior(String nome, String linguagem, float salarioBase, float verbaLider){
+        super(nome, linguagem, salarioBase);
+        this.verbaLider = verbaLider;
     }
 
     public float getVerbaLider() {
@@ -14,20 +15,13 @@ public class Senior extends Desenvolvedor {
     public void setVerbaLider(float verbaLider) {
         this.verbaLider = verbaLider;
     }
-
-    public Senior(String nome, String linguagem, float salarioBase, float verbaLider){
-        super(nome, linguagem, salarioBase);
-        this.verbaLider = verbaLider;
-    }
-
     @Override
     public void codar(){
-        System.out.println("Sênior definindo a arquitetura do software e liderando pessoas");
+        System.out.println("Sênior definindo a arquitetura do software e liderando pessoas.");
     }
-
     @Override
     public float calcularBonus(){
-        return super.calcularBonus() + this.salarioBase * 0.30f;
+        return super.calcularBonus() + this.salarioBase * 0.30F;
     }
 
     @Override

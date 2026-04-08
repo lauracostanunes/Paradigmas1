@@ -1,40 +1,35 @@
 package FolhadePagamento;
 
-public class Desenvolvedor{
+public class Desenvolvedor {
     protected String nome, linguagem;
     protected float salarioBase;
 
-    public Desenvolvedor() {
-    }
 
-    public Desenvolvedor(String nome, String linguagem, float salario) {
+    public Desenvolvedor(String nome, String linguagem, float salarioBase){
         this.nome = nome;
-        this.salarioBase = salario;
         this.linguagem = linguagem;
+        this.salarioBase = salarioBase;
     }
+    public Desenvolvedor(){
 
-    public String getNome() {
-        return nome;
     }
-
-    public void setNome(String nome) {
+    public void setNome(String nome){
         this.nome = nome;
     }
-
-    public float getSalario() {
-        return salarioBase;
+    public String getNome(){
+        return this.nome;
     }
-
-    public void setSalario(float salario) {
-        this.salarioBase = salario;
-    }
-
-    public String getLinguagem() {
-        return linguagem;
-    }
-
-    public void setLinguagem(String linguagem) {
+    public void setLinguagem(String linguagem){
         this.linguagem = linguagem;
+    }
+    public String getLinguagem(){
+        return this.linguagem;
+    }
+    public void codar(){
+        System.out.println("Desenvolvedor planeja e escreve código-fonte.");
+    }
+    public float calcularBonus(){
+        return this.salarioBase * 0.05F;
     }
 
     @Override
@@ -42,14 +37,7 @@ public class Desenvolvedor{
         return "Desenvolvedor{" +
                 "nome='" + nome + '\'' +
                 ", linguagem='" + linguagem + '\'' +
-                ", salario=" + salarioBase +
+                ", salarioBase=" + salarioBase +
                 '}';
-    }
-
-    public void codar(){
-        System.out.println("Desenvolvedor planeja e escreve código-fonte");
-    }
-    public float calcularBonus(){
-        return this.salarioBase * 0.05f;
     }
 }

@@ -1,40 +1,35 @@
 package SistemadeVeiculos;
 
-public class Aviao extends Veiculo{
-    private float altitudoMax;
+public class Aviao extends Veiculo {
+    private float altitudeMax;
 
-    public Aviao(){}
-
-    public Aviao(String marca, String modelo, float velocidade, float altitudoMax){
+    public Aviao(String marca, String modelo, float velocidade, float altitudeMax) {
         super(marca, modelo, velocidade);
-        this.altitudoMax = altitudoMax;
+        this.altitudeMax = altitudeMax;
     }
 
-    public float getAltitudoMax() {
-        return altitudoMax;
+    public float getAltitudeMax() {
+        return altitudeMax;
     }
 
-    public void setAltitudoMax(float altitudoMax) {
-        this.altitudoMax = altitudoMax;
+    public void setAltitudeMax(float altitudeMax) {
+        this.altitudeMax = altitudeMax;
     }
 
     @Override
     public void mover(){
-        System.out.printf("""
-                Avião voando a %.2f km/h e %.2f metros.
-                """, this.velocidade, this.altitudoMax);
+        System.out.printf("Avião voando a [%.3f] km/h e [%.3f] metros\n", this.velocidade, this.altitudeMax);
     }
-
     @Override
     public void abastecer(){
-        System.out.println("Abastecendo com querosene de aviação.");
+        System.out.println("Abastecendo com querosene de aviação");
     }
 
     @Override
     public String toString() {
-        return "Aviao{" +
+        return "\n Aviao{" +
                 super.toString() +
-                "altitudoMax=" + altitudoMax +
+                "altitudeMax=" + altitudeMax +
                 '}';
     }
 }

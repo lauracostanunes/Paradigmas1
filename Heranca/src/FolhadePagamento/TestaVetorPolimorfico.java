@@ -3,19 +3,19 @@ package FolhadePagamento;
 import java.util.ArrayList;
 
 public class TestaVetorPolimorfico {
+    public static void exibir(Desenvolvedor desenvolvedor){
+        desenvolvedor.codar();
+        System.out.println(desenvolvedor.calcularBonus());
+        System.out.println(desenvolvedor.toString());
+    }
     public static void main(String[] args){
-        ArrayList<Desenvolvedor> vetor = new ArrayList<>();
+        ArrayList<Desenvolvedor> devs = new ArrayList<Desenvolvedor>();
 
-        vetor.add(new Junior("João", "Java", 15, "Zeca"));
-        vetor.add(new Pleno("Pedro", "C#", 30, 1));
-        vetor.add(new Senior("Roberto", "Python", 50, 100));
-        vetor.add(new Desenvolvedor("Junior", "PHP", 20));
+        devs.add(new Junior("miguel", "JAVA", 1200, "daniel"));
+        devs.add(new Pleno("jonata", "js", 2300, 2));
+        devs.add(new Senior("marina", "Java", 5000, 3000));
 
-        vetor.forEach(dev -> {
-            dev.codar();
-            System.out.println("Bônus "+ dev.calcularBonus());
-            System.out.println(dev.toString() + "\n");
-        });
+        devs.forEach(TestaVetorPolimorfico::exibir);
 
     }
 }
